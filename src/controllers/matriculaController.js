@@ -57,7 +57,7 @@ const actualizarMatricula = async(req,res)=>{
         return res.status(404).json({msg:'La matricula a actualizar no existe'});
     }
 
-    if(req.body.codigo && req.body.codigo !== matricular.codigo){
+    if(req.body.codigo && req.body.codigo !== matricula.codigo){
         const existeCodigo=await Matriculas.findOne({codigo: req.body.codigo});
         if(existeCodigo){
             return res.status(400).json({msg:'Ese codigo ya esta en uso'});
