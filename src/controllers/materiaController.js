@@ -12,7 +12,6 @@ const agregarMateria = async(req,res)=>{
         const materia = new Materia(req.body);
         await materia.save();
         res.json({msg: 'Materia registrada correctamente', ...materia._doc});
-        res.json(materia);
     } catch(error){
         console.log(error);
         res.status(500).json({msg:'Error al registrar materia'});
