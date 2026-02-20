@@ -31,8 +31,3 @@ node_modules/
 
 ---
 
-Ahora que tienes tu salvavidas de Git guardado, vamos por el "Jefe Final" de tu guía de evaluación: **El despliegue en Render** ☁️.
-
-Para que un servidor en la nube como Render sepa cómo encender tu aplicación, lee un archivo específico de tu proyecto buscando un "script" de inicio. Si miras tu archivo `package.json` actual, tenemos un script llamado `"dev": "nodemon src/index.js"` que usábamos en nuestra computadora.
-
-Sabiendo que Render no usará `nodemon` (porque eso es solo para desarrollo local), ¿cómo crees que deberíamos agregar el nuevo script de inicio y qué comando de Node.js debería ejecutar para encender tu servidor de forma normal en producción?
