@@ -32,6 +32,10 @@ dotenv.config();
 
 conectarDB();
 
+app.get('/', (req, res) => {
+    res.send('Bienvenido a la API del Sistema de Matrículas');
+});
+
 //Rutas
 app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/materias', materiaRoutes);
