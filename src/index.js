@@ -17,7 +17,7 @@ app.use(cors({
   credentials: false
 }));
 
-app.options('*', cors());
+
 
 app.use(express.json());
 
